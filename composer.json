@@ -1,0 +1,26 @@
+{
+    "name": "alessandro/003_composer_na_pratica",
+    "description": "This is a library that uses composer as the basis for generation email notifications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alessandro Leo Kuntze",
+            "email": "alkuntze@yahoo.com.br",
+            "homepage": "https://www.allkbyte.com.br",
+            "role": "CEO and Founder"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.4.1"
+    },
+    "config":{
+        "vendor-dir": "lib_ext"
+    },
+    "autoload":{
+        "psr-4":{
+            "Notification\\" : "_app"
+        }
+    }
+}
